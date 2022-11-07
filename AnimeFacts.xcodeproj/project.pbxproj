@@ -13,6 +13,8 @@
 		A92596142914DF34008C7781 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A92596122914DF34008C7781 /* Main.storyboard */; };
 		A92596162914DF34008C7781 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A92596152914DF34008C7781 /* Assets.xcassets */; };
 		A92596192914DF34008C7781 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A92596172914DF34008C7781 /* LaunchScreen.storyboard */; };
+		A92596232914DFAB008C7781 /* Anime.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92596222914DFAB008C7781 /* Anime.swift */; };
+		A92596272914EB9E008C7781 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A92596262914EB9E008C7781 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		A92596152914DF34008C7781 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A92596182914DF34008C7781 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A925961A2914DF34008C7781 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A92596222914DFAB008C7781 /* Anime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anime.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A92596272914EB9E008C7781 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +60,56 @@
 		A925960B2914DF34008C7781 /* AnimeFacts */ = {
 			isa = PBXGroup;
 			children = (
-				A925960C2914DF34008C7781 /* AppDelegate.swift */,
-				A925960E2914DF34008C7781 /* SceneDelegate.swift */,
-				A92596102914DF34008C7781 /* ViewController.swift */,
-				A92596122914DF34008C7781 /* Main.storyboard */,
-				A92596152914DF34008C7781 /* Assets.xcassets */,
-				A92596172914DF34008C7781 /* LaunchScreen.storyboard */,
+				A92596202914DF4A008C7781 /* Delegates */,
+				A92596212914DF6F008C7781 /* DataModel */,
+				A92596282914EBA7008C7781 /* Controller */,
+				A92596292914EBC2008C7781 /* StoryBoards */,
+				A925962A2914EBD5008C7781 /* Resources */,
 				A925961A2914DF34008C7781 /* Info.plist */,
 			);
 			path = AnimeFacts;
+			sourceTree = "<group>";
+		};
+		A92596202914DF4A008C7781 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				A925960C2914DF34008C7781 /* AppDelegate.swift */,
+				A925960E2914DF34008C7781 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		A92596212914DF6F008C7781 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				A92596222914DFAB008C7781 /* Anime.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		A92596282914EBA7008C7781 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A92596102914DF34008C7781 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A92596292914EBC2008C7781 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				A92596122914DF34008C7781 /* Main.storyboard */,
+				A92596172914DF34008C7781 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		A925962A2914EBD5008C7781 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A92596152914DF34008C7781 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +128,9 @@
 			dependencies = (
 			);
 			name = AnimeFacts;
+			packageProductDependencies = (
+				A92596262914EB9E008C7781 /* SnapKit */,
+			);
 			productName = AnimeFacts;
 			productReference = A92596092914DF34008C7781 /* AnimeFacts.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +159,9 @@
 				Base,
 			);
 			mainGroup = A92596002914DF33008C7781;
+			packageReferences = (
+				A92596252914EB9E008C7781 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = A925960A2914DF34008C7781 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +189,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A92596232914DFAB008C7781 /* Anime.swift in Sources */,
 				A92596112914DF34008C7781 /* ViewController.swift in Sources */,
 				A925960D2914DF34008C7781 /* AppDelegate.swift in Sources */,
 				A925960F2914DF34008C7781 /* SceneDelegate.swift in Sources */,
@@ -358,6 +410,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A92596252914EB9E008C7781 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A92596262914EB9E008C7781 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A92596252914EB9E008C7781 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A92596012914DF33008C7781 /* Project object */;
 }
