@@ -10,7 +10,7 @@ import UIKit
 class ViewController: UIViewController { 
     
     // MARK: - Property
-    var animes: [Anime.AnimeDetail] = []
+    private var animes: [Anime.AnimeDetail] = []
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
